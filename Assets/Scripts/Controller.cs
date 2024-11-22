@@ -7,13 +7,13 @@ public class NewBehaviourScript : MonoBehaviour
     private Vector3 offset;
     private Camera mainCamera;
     private bool isDragging = false;
-    // Start is called before the first frame update
+
     void Start()
     {
         mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
@@ -27,8 +27,13 @@ public class NewBehaviourScript : MonoBehaviour
     void OnMouseDrag()
     {
         if (isDragging)
-            transform.position = GetMouseWorldPosition() + offset;
+        {
+            Vector3 newPosition = GetMouseWorldPosition() + offset;
+            newPosition.y = 3f;
+            transform.position = newPosition;
+        }
     }
+
 
     void OnMouseUp()
     {
