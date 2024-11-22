@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class PlacementChecker : MonoBehaviour
 {
-    private bool isOccupied = false; // Alanýn dolu olup olmadýðýný kontrol ediyoruz.
+    private GameObject placedObject = null; 
 
     private void OnTriggerEnter(Collider other)
     {
-        // Eðer alan doluysa ve yeni bir nesne girmeye çalýþýyorsa, iþlemi durdur.
-        if (isOccupied)
+        if (placedObject == null)
         {
-            Debug.Log("Alan zaten dolu! Yeni nesne yerleþtirilemez.");
-            return;
+            placedObject = other.gameObject; 
+            Debug.Log("Nesne baþarýyla yerleþtirildi.");
+            DisableDragging(placedObject);
         }
-
-        // Eðer giden nesne uygun Tag'e sahipse, iþlem yap.
-        if (other.CompareTag("Draggable"))
+        else
         {
-            Debug.Log("Nesne yerleþtirildi");
-            isOccupied = true; // Alan artýk dolu.
-            other.GetComponent<Controller>().enabled = false; // Nesnenin hareketini kapat.
+            Debug.Log("Yerleþtirme alaný dolu! Baþka bir nesne yerleþtirilemez.");
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Alanýn boþaltýlmasý durumu.
-        if (other.CompareTag("Draggable"))
+        if (placedObject == other.gameObject)
         {
-            Debug.Log("Nesne alandan çýkarýldý");
-            isOccupied = false; // Alan tekrar kullanýlabilir.
+            placedObject = null;
+            Debug.Log("Nesne alandan çýkarýldý.");
         }
+    }
+
+    private void DisableDragging(GameObject obj)
+    {
+        obj.GetComponent<NewBehaviourScript>().enabled = false; 
     }
 }
