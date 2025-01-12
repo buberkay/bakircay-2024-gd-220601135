@@ -241,7 +241,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1237861756}
@@ -411,6 +411,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &765668141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765668123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55863f53744de446a9959048eeba7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &768689411 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6230954602219659832, guid: be470d4e1213fe34b9dedfe2db6432ce, type: 3}
@@ -444,6 +456,10 @@ PrefabInstance:
     - target: {fileID: 5182514149349444479, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
       propertyPath: m_Name
       value: Lime Cube 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182514149349444479, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
+      propertyPath: m_TagString
+      value: ObjectPair
       objectReference: {fileID: 0}
     - target: {fileID: 5458552419261448802, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -495,6 +511,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5182514149349444479, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 799764598}
+    - targetCorrespondingSourceObject: {fileID: 5182514149349444479, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 799764604}
   m_SourcePrefab: {fileID: 100100000, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
 --- !u!1 &799764591 stripped
 GameObject:
@@ -526,6 +545,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &799764604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799764591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55863f53744de446a9959048eeba7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &959356058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 811747442478730743, guid: 3d8ce35970ea46748bf7132032949b77, type: 3}
@@ -711,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 1050111581}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 9.53, z: -0.06}
+  m_LocalPosition: {x: 0, y: 12.53, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1126,6 +1157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Lime Cube 1 '
       objectReference: {fileID: 0}
+    - target: {fileID: 5182514149349444479, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
+      propertyPath: m_TagString
+      value: ObjectPair
+      objectReference: {fileID: 0}
     - target: {fileID: 5458552419261448802, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7
@@ -1176,6 +1211,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5182514149349444479, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 765668135}
+    - targetCorrespondingSourceObject: {fileID: 5182514149349444479, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 765668141}
   m_SourcePrefab: {fileID: 100100000, guid: 2525e07aec1922542b32fe84e4d2d9a6, type: 3}
 --- !u!1001 &3136321516180478235
 PrefabInstance:
@@ -1349,7 +1387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178624020645695407, guid: 3d8ce35970ea46748bf7132032949b77, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.2
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 1178624020645695407, guid: 3d8ce35970ea46748bf7132032949b77, type: 3}
       propertyPath: m_LocalRotation.w

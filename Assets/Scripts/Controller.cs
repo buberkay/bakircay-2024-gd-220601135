@@ -30,6 +30,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             Vector3 newPosition = GetMouseWorldPosition() + offset;
             newPosition.y = 3f;
+            newPosition.z += 0.2f;
             transform.position = newPosition;
         }
     }
