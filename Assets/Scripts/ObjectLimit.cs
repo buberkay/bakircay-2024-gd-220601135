@@ -6,7 +6,6 @@ public class Respawn : MonoBehaviour
 {
     public Vector3 respawnPosition = Vector3.zero;
 
-    // X ve Z eksenleri için sýnýrlar
     public float xMin = -4f;
     public float xMax = 4f;
     public float zMin = -5f;
