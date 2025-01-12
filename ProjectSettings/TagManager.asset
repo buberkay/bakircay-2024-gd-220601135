@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Draggable
   - ObjectPair
+  - Freeze
   layers:
   - Default
   - TransparentFX

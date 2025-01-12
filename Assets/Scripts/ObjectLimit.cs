@@ -6,8 +6,8 @@ public class Respawn : MonoBehaviour
 {
     public Vector3 respawnPosition = Vector3.zero;
 
-    public float xMin = -3.5f;
-    public float xMax = 3.5f;
+    public float xMin = -4f;
+    public float xMax = 4f;
     public float zMin = -5f;
     public float zMax = 5f;
 
