@@ -25,7 +25,7 @@ public class FreezeSkillButton : MonoBehaviour
     {
         if (!isFrozen)
         {
-            GameObject[] objects = GameObject.FindGameObjectsWithTag("Freeze");
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("GameObject");
 
             foreach (var obj in objects)
             {
@@ -53,7 +53,7 @@ public class FreezeSkillButton : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
 
-        GameObject[] objects = GameObject.FindGameObjectsWithTag("Freeze");
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("GameObject");
 
         foreach (var obj in objects)
         {
