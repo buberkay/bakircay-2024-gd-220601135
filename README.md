@@ -32,4 +32,6 @@ https://github.com/user-attachments/assets/e7ccbb48-2db4-4cb8-b496-4e16edef3598
       <li><b>Freeze Skill:</b> Players can freeze objects in place temporarily, helping with the organization and placement of objects in the scene.</li>
     </ul>
 
+<h2>Play now: </h2> 
+<a href="https://buberkay.github.io/bakircay-2024-gd-220601135/" target="_blank">Click here to play the game!</a>
 
